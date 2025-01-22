@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+
 public class servlet1 extends HttpServlet {
     public void processRequest(HttpServletRequest request, HttpServletResponse response) throws IOException{
         response.setContentType("text/html; charSet-UTF-8");
