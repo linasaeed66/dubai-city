@@ -1,0 +1,132 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 4rem;
+            position: fixed;
+            width: 100%;
+            background: white;
+            z-index: 1000;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .logo img {
+            height: 40px;
+        }
+
+        .cta-button {
+            background: #1a1a1a;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 2rem;
+            text-decoration: none;
+        }
+
+        .hero {
+            height: 100vh;
+            background: url('images/dubai.jpg') center/cover;
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            padding: 4rem;
+        }
+
+        .hero-content {
+            color: #333;
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            border-radius: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-content p {
+            line-height: 1.6;
+            color: #666;
+        }
+
+        .social-links {
+            position: fixed;
+            right: 2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 1rem;
+            border-radius: 2rem;
+        }
+
+        .social-links a {
+            color: #666;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .menu-button {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 1rem;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                padding: 1rem;
+                text-align: center;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .menu-button {
+                display: block;
+            }
+
+            .hero {
+                padding: 2rem;
+            }
+
+            .social-links {
+                position: static;
+                flex-direction: row;
+                justify-content: center;
+                margin-top: 1rem;
+                transform: none;
+            }
+        }

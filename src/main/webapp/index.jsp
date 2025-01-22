@@ -5,47 +5,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart City</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <title>Amazing Thailand - Magic Meets Tradition</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header>
-        <div id="logo">
-            <p><%= new Date() %></p>
-            <a href="index.jsp">
-                <img src="images/mylogo.png" alt="Logo">
-            </a>
+    <nav>
+        <div class="nav-links">
+            <a href="tourism.jsp">Tourism</a>
+            <a href="student.jsp">Student</a>
+            <a href="jobs.jsp">Job applicant</a>
+            <a href="business.jsp">Business</a>
+            <a href="jobs.jsp"></a>
         </div>
-        <nav>
-            <a href="restaurant.jsp">Restaurant</a>
-            <a href="hotels.jsp">Hotels</a>
-            <a href="attractions.jsp">Attractions</a>
-            <a href="schools.jsp">Schools</a>
-            <a href="jobs.jsp">Jobs</a>
-        </nav>
-        <div id="user-controls">
-            <a href="login.jsp" id="login">Login</a>
-            <a href="register.jsp" id="register">Register</a>
+        <div class="logo">
+            <img src="images/mylogo.png" alt="Amazing Thailand Logo">
         </div>
-    </header>
-    <div id="welcome-section">
-        <div id="left-content">
-            <h1>Welcome to Rabat Smart City!</h1>
-            <div id="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/" 
-                    title="Tangier 2023 by drone" frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-                </iframe>
-            </div>
+        <a href="#book" class="cta-button">Let's Traveling</a>
+        <button class="menu-button">☰</button>
+    </nav>
+
+    <main class="hero">
+        <div class="hero-content">
+            <h1>Magic Meets Tradition</h1>
+            <p>Embark On An Unforgettable Journey Through The Diverse Landscapes And Rich Cultural Tapestry Of Dubai.</p>
         </div>
-        <div id="right-content">
-            <img src="images/destination.svg" alt="Rabat Smart City">
-        </div>
-    </div>
-    <footer>
-        &copy; 2024 Rabat Smart City. All rights reserved.
-    </footer>
+    </main>
+
+    <script>
+        // Mobile menu toggle
+        const menuButton = document.querySelector('.menu-button');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuButton.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Hide menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                navLinks.classList.remove('active');
+            }
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
