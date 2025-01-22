@@ -1,0 +1,30 @@
+@charset "UTF-8";
+@import 'https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:300,400';
+
+body {
+  background: #efefef;
+  color: #333;
+  font-family: "Raleway";
+}
+
+.jobs {
+	margin-top: 2em;
+	padding: 3em;
+	background-color: #fff;
+	width: 70%;
+	margin-inline: auto;
+	border-radius: 7px / 8px;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.06)
+}
+
+.jobs ul {
+	list-style: none;
+}
+
+.jobs li {
+	padding: 1em 0.5em
+}
+
+.jobs li:not(:last-child) {
+	border-bottom: 1px dashed black;
+}

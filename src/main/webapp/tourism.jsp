@@ -12,8 +12,7 @@
 	<nav>
 		<div class="nav-links">
 			<a href="tourism.jsp">Tourism</a> <a href="student.jsp">Student</a> <a
-				href="jobs.jsp">Job applicant</a> <a href="business.jsp">Business</a>
-			<a href="jobs.jsp"></a>
+				href="jobs">Job applicant</a> <a href="business.jsp">Business</a>
 		</div>
 		<div class="logo">
 			<img src="images/mylogo.png" alt="Amazing Thailand Logo">
