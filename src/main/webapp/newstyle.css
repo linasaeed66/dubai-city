@@ -1,0 +1,13 @@
+@charset "UTF-8";
+@keyframes animation {
+	
+from {background-color: pink;}
+to {background-color: green;}
+}
+#div1 {
+	width: 700px;
+	height: 700px;
+	background-color: red;
+	anaimation-name: animation;
+	animation-duration: 5s;
+}

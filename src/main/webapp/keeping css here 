@@ -1,0 +1,268 @@
+#display{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+#display td, #display th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+#display tr:nth-child(even){background-color: #424242;}
+  
+#display tr:hover {background-color: #666;}
+  
+#display th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+  #add {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #4CAF50; /* Green border for add button */
+    border-radius: 25px;
+    background-color: #4CAF50; /* Green background for add button */
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+#add:hover {
+    background-color: #45a049; /* Darker green on hover for add button */
+}
+
+#edit {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #007BFF; /* Blue border for edit button */
+    border-radius: 25px;
+    background-color: #007BFF; /* Blue background for edit button */
+    transition: background-color 0.3s, border-color 0.3s;
+    cursor: pointer;
+}
+
+#edit:hover {
+    background-color: #0056b3; /* Darker blue on hover for edit button */
+    
+}
+
+#delete {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #FF0000; /* Red border for delete button */
+    border-radius: 25px;
+    background-color: #FF0000; /* Red background for delete button */
+    transition: background-color 0.3s, border-color 0.3s;
+    cursor: pointer;
+    
+}
+
+#delete:hover {
+    background-color: #cc0000; /* Darker red on hover for delete button */
+
+}
+table img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+#welcome-section {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: 20px auto;
+}
+
+#left-content,
+#right-content {
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards; /* Adding fade-in animation */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+#left-content {
+    max-width: 60%;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+#video-container {
+    margin-top: 20px;
+}
+
+iframe {
+    width: 100%;
+    height: 315px;
+}
+
+#right-content {
+    max-width: 30%;
+}
+
+#right-content img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #080812;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    width: 100%;
+}
+/* Add this CSS to your existing styles.css or include it in the head of your HTML file */
+#addForm {
+    max-width: 400px; /* Set a maximum width for the form */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px; /* Add padding to the form */
+    border: 1px solid #ddd; /* Add a border for better visibility */
+    border-radius: 8px; /* Add border-radius for rounded corners */
+}
+
+#addForm label {
+    display: block; /* Display labels as blocks to stack them vertically */
+    margin-bottom: 8px; /* Add some bottom margin to labels */
+}
+
+#addForm input,
+#addForm textarea {
+    width: 100%; /* Make input fields and textareas 100% width */
+    padding: 8px; /* Add padding to input fields */
+    margin-bottom: 16px; /* Add bottom margin to input fields */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+#addForm button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#addForm button:hover {
+    background-color: #45a049;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffffff;
+    color: #0a0505;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Fixed width */
+    margin: 20px auto; /* Center the container */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+.password-container {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    cursor: pointer;
+    transform: translateY(-50%);
+    color: #007bff;
+}
+
+#logo {
+    cursor: pointer;
+}
+
+#logo img {
+    max-width: 100px;
+}
+
+nav {
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav a {
+    color: #020101;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+#user-controls {
+    display: flex;
+    align-items: center;
+}
+
+#login, #register {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px; /* Increase padding for a more prominent look */
+    border: 2px solid #fff;
+    border-radius: 25px; /* Rounded corners */
+    background-color: #6b63fe; /* Background color */
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+#login:hover,
+#register:hover {
+    background-color: #0a0404; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+
+
+
+
+#ads {
+    float: right;
+    margin: 20px;
+}
+
